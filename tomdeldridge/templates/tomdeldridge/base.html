@@ -1,0 +1,39 @@
+{% load staticfiles %}
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'tomdeldridge/site.css' %}">
+        <script type="text/javascript" src="{% static 'tomdeldridge/site.js' %}"></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Eldridge Software Development</title>
+        {% block head %}
+
+        {% endblock %}
+    </head>
+    <body>
+    <div class="pagewrap">
+        <div class="header">
+            <div>
+                <img onclick="MobileMenu('nav');" class="navicon" src="{% static 'tomdeldridge/images/graynav-2.png' %}">
+                <div class="logocontainer" ><a href="/"><img class="logo" src="{% static 'tomdeldridge/images/e-2.jpg' %}"></a></div>
+                <nav id="nav" class="nav">
+                    <a href="/services"><div class="pagelinkcontainers" ><div class="pagelinks" >Services</div></div></a>
+                    <a href="/portfolio"><div class="pagelinkcontainers" ><div class="pagelinks" >Portfolio</div></div></a>
+                    <a href="http://www.tomdeldridge.com/blog"><div class="pagelinkcontainers" ><div class="pagelinks" >Blog</div></div></a>
+                    <a href="/contact"><div class="pagelinkcontainers" ><div class="pagelinks" >Contact</div></div></a>
+                </nav>
+            </div>
+        </div>
+        {% block content %}
+
+        {% endblock %}
+    </div>
+    <div class="footer" >
+        <div class="copywrite" >&#169; <span id="copywritelabel">tomdeldridge.com</span> 2015</div>
+        <div class="footerlinkscontainer" >
+            <a class="footerlinks" href="http://stackoverflow.com/users/4272549/teldridge11">StackOverflow</a>
+            <a class="footerlinks" href="https://github.com/teldridge11">Github</a>
+        </div>
+    </div>
+    </body>
+</html>

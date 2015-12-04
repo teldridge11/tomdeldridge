@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+<div id="servicespage" class="pages" >
+    <div class="titletextcontainer" >
+        <div class="titletextservices" >Software Services
+        </div>
+        <a href="/portfolio"><div class="servicesbuttonwhite" >Project Examples</div></a>
+    </div>
+    <div class="serverimage" ></div>
+    <div class="servicescontainer" >
+        <div class="innerservicescontainer" >
+            <div class="servicesiconcontainers" >
+                <img class="servicesicons" src="{% static 'tomdeldridge/images/computer-2.png' %}">
+                <div class="iconlabels" ><b>Web Applications</b></div>
+                <p class="icondescriptions" >Using Python and Django, web applications can be built in very little time without sacrificing performance or scalability.</p>
+            </div>
+            <div class="servicesiconcontainers" >
+                <img class="servicesicons" src="{% static 'tomdeldridge/images/phone.png' %}">
+                <div class="iconlabels" ><b>Mobile Development</b></div>
+                <p class="icondescriptions" >All web apps are designed to be mobile responsive.  If something more specific is needed, a custom iOS app can be built.</p>
+            </div>
+            <div class="servicesiconcontainers" >
+                <img class="servicesicons" src="{% static 'tomdeldridge/images/graph-2.png' %}">
+                <div class="iconlabels" ><b>Analytics Packages</b></div>
+                <p class="icondescriptions" >All applications come built-in with the most advanced analytics software avaliable to help you stay up to date with your users.</p>
+            </div>
+        </div>
+    </div>
+    <div class="titletextcontainer" >
+        <div class="titletextcontact" >Build your idea today</div>
+        <a href="/contact"><div class="quotebutton" >Get a quote</div></a>
+    </div>
+    <div class="circuitimage" ></div>
+        <div class="servicescontainer" >
+        <div class="innerservicescontainer" >
+            <div class="servicesiconcontainers" >
+                <img class="servicesicons" src="{% static 'tomdeldridge/images/cart-2.png' %}">
+                <div class="iconlabels" ><b>eCommerce</b></div>
+                <p class="icondescriptions" >Online retail is a huge part of the web today, and we offer solutions for your business to sell your products and services online.</p>
+            </div>
+            <div class="servicesiconcontainers" >
+                <img class="servicesicons" src="{% static 'tomdeldridge/images/wordpress-2.png' %}">
+                <div class="iconlabels" ><b>Content Management Systems</b></div>
+                <p class="icondescriptions" >We use Drupal and Wordpress so our clients can publish their own content.  For efficiency reasons, we use CMS's exclusively for blogs.</p>
+            </div>
+            <div class="servicesiconcontainers" >
+                <img class="servicesicons" src="{% static 'tomdeldridge/images/maintenance-2.png' %}">
+                <div class="iconlabels" ><b>Hosting / Maintenance</b></div>
+                <p class="icondescriptions" >Host your site on our servers, and if you need any maintenance or run into bugs, we can take care of it for you.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

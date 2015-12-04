@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block head %}
+<script>
+    window.onload = generateRandNum;
+</script>
+{% endblock head %}
+
+{% block content %}
+
+<div id="contactpage" class="pages" >
+    <div class="contactcontainer" >
+        <div class="contactformcontainer" >
+            <form action="/contactauth/" method="post">
+                {% csrf_token %}
+                <div>LET'S GET STARTED ON YOUR PROJECT!</div>
+                {% block contactValidation %}
+
+                {% endblock %}
+                <br>
+                <input type=text class="formfields" placeholder="Name" name="name">
+                <br><br>
+                <input type=email class="formfields" placeholder="Email" name="from_email">
+                <br><br>
+                <textarea type=text placeholder="Tell Us About Your Project" name="message"></textarea>
+                <br><br>
+                <input type="hidden" value="" id="num1setup" name="num1setup">
+                <input type="hidden" value="" id="num2setup" name="num2setup">
+                <div id="sendcontainer">
+                    <div id="whatis">What is &nbsp</div><div id="num1"></div><div id="plus">&nbsp + &nbsp</div><div id="num2">?</div><br>
+                    <div id="sumcontainer">
+                        <input id="sum" type="sum" name="sum">
+                        <br><br>
+                    </div>
+                    <input class="submit" type=submit value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="contactimage" ></div>
+</div>
+
+{% endblock content %}

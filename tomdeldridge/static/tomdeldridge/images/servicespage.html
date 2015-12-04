@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+<div id="servicespage" class="pages" >
+    <div class="titletextcontainer" >
+        <div class="titletextservices" >Software Services
+        </div>
+        <a href="/portfolio"><div class="servicesbuttonwhite" >Project Examples</div></a>
+    </div>
+    <div class="serverimage" ></div>
+    <div class="servicescontainer" >
+        <div class="innerservicescontainer" >
+            <div class="servicesiconcontainers" >
+                <img class="servicesicons" src="{% static 'tomdeldridge/images/computer-2.png' %}">
+                <div class="iconlabels" ><b>Web Applications</b></div>
+                <p class="icondescriptions" >The source code for our web apps is all built from scratch.  This is why we have superior performance and scalability.</p>
+            </div>
+            <div class="servicesiconcontainers" >
+                <img class="servicesicons" src="{% static 'tomdeldridge/images/mobile-2.png' %}">
+                <div class="iconlabels" ><b>Mobile Responsive Design</b></div>
+                <p class="icondescriptions" >We design all our applications to run on every screen size; from desktop and tablet all the way down to mobile</p>
+            </div>
+            <div class="servicesiconcontainers" >
+                <img class="servicesicons" src="{% static 'tomdeldridge/images/graph-2.png' %}">
+                <div class="iconlabels" ><b>Analytics</b></div>
+                <p class="icondescriptions" >If you need to keep track of important information, we can install analytics software so you can stay up to date with your customers.</p>
+            </div>
+        </div>
+    </div>
+    <div class="titletextcontainer" >
+        <div class="titletextcontact" >Build your idea today</div>
+        <a href="/contact"><div class="quotebutton" >Get a quote</div></a>
+    </div>
+    <div class="circuitimage" ></div>
+        <div class="servicescontainer" >
+        <div class="innerservicescontainer" >
+            <div class="servicesiconcontainers" >
+                <img class="servicesicons" src="{% static 'tomdeldridge/images/cart-2.png' %}">
+                <div class="iconlabels" ><b>eCommerce</b></div>
+                <p class="icondescriptions" >Online retail is a huge part of the web today, and we offer solutions for your business to sell your products and services online.</p>
+            </div>
+            <div class="servicesiconcontainers" >
+                <img class="servicesicons" src="{% static 'tomdeldridge/images/wordpress-2.png' %}">
+                <div class="iconlabels" ><b>Content Management Systems</b></div>
+                <p class="icondescriptions" >We use Drupal and Wordpress so our clients can publish their own content.  For efficiency reasons, we use CMS's exclusively for blogs.</p>
+            </div>
+            <div class="servicesiconcontainers" >
+                <img class="servicesicons" src="{% static 'tomdeldridge/images/maintenance-2.png' %}">
+                <div class="iconlabels" ><b>Hosting / Maintenance</b></div>
+                <p class="icondescriptions" >Host your site on our servers, and if you need any maintenance or run into bugs, we can take care of it for you.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

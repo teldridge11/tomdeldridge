@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block head %}
+<script>
+    window.onload = auto;
+</script>
+{% endblock head %}
+
+{% block content %}
+
+<div id="portfoliopage" class="pages" >
+    <div class="slideshow" >
+        <img class="currentslide" src="{% static 'tomdeldridge/images/eco.png' %}" name="slideshow">
+    </div>
+    <div class="imagenavcontainer" >
+        <img onclick="change_image(-1)" id="left" class="slidenav" src="{% static 'tomdeldridge/images/left-2.png' %}">
+        <img onclick="change_image(1);" id="right" class="slidenav" src="{% static 'tomdeldridge/images/right-2.png' %}">
+    </div>
+</div>
+
+{% endblock content %}

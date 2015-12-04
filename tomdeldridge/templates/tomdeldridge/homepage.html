@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+<div id="homepage" class="pages" >
+    <div class="titletextcontainer" >
+        <div class="titletexthome" >Web development done right. Every time, the first time.
+        </div>
+        <a href="/portfolio"><div class="servicesbuttonwhite" >Portfolio</div></a>
+    </div>
+    <div class="bitsimage" ></div>
+    <div class="aboutus" >
+        <div class="ourfocuscontainer" >
+            <div class="innerourfocuscontainer" >
+                <div class="ourservices" >
+                    Services
+                </div>
+                <div class="ourfocusiconcontainers" >
+                    <img class="ourfocusicons" src="{% static 'tomdeldridge/images/orangelaptop.png' %}">
+                    <div class="iconlabels" ><b>Web Development</b></div>
+                    <p class="icondescriptions" >The web is the most important means of doing business in the twenty-first century.</p>
+                </div>
+                <div class="ourfocusiconcontainers" >
+                    <img class="ourfocusicons" src="{% static 'tomdeldridge/images/phone.png' %}">
+                    <div class="iconlabels"><b>iPhone App Development</b></div>
+                    <p class="icondescriptions">Apple's new programming language, Swift, makes developing custom apps a breeze.</p>
+                </div>
+                <div class="ourfocusiconcontainers" >
+                    <img class="ourfocusicons" src="{% static 'tomdeldridge/images/flower-2.png' %}">
+                    <div class="iconlabels"><b>Software Design</b></div>
+                    <p class="icondescriptions">A quality design creates synergy with your brand the rest of your organization.</p>
+                </div>
+            </div>
+            <a href="/services"><div class="servicesbutton" >Other Services</div></a>
+        </div>
+        <hr>
+        <div class="technologieslabel">Technologies</div>
+        <div class="technologiescontainerouter">
+           <div class="technologiescontainerinner">
+               <img class="technologiesimages" src="{% static 'tomdeldridge/images/html_css.png' %}">
+               <img class="technologiesimages" src="{% static 'tomdeldridge/images/django.png' %}">
+               <img class="technologiesimages" src="{% static 'tomdeldridge/images/javascript.png' %}">
+               <img class="technologiesimages" src="{% static 'tomdeldridge/images/python.png' %}">
+               <img class="technologiesimages" src="{% static 'tomdeldridge/images/swift.png' %}">
+               <img class="technologiesimages" src="{% static 'tomdeldridge/images/mySQL.png' %}">
+               <img class="technologiesimages" src="{% static 'tomdeldridge/images/postgresql.png' %}">
+           </div>
+        </div>
+        <div class="tomdescription" >
+            <div class="tomdescriptioncontainer">
+                <img class="myphoto" src="{% static 'tomdeldridge/images/portrait.png' %}">
+                <div class="description" >
+                    <div class="nameheaders"><h1 class="accents">-&nbsp</h1><h1 class="accentheader">Tom Eldridge</h1><h1 class="accents">&nbsp-</h1></div>
+                    <p>Tom is pursuing a B.S. in Computer Science from Oregon State University, and has a B.S. in Management from Tulane University.  His interests in technology are robotics, artificial intelligence, and bioinformatics.</p>
+                    <p>Recent projects Tom has worked on are HealthRank - an iPhone application that gives users a daily health score, and PyGamers.com - A website for PyGame developers and hobbyists to share their games and code.</p>
+                    <p>He first started writing software in 2011, and it has become one of his greatest passions.  Tom is proficient in C, C++, HTML, CSS, JavaScript, Python, Swift, PHP, and SQL.</p>
+                </div>
+            </div>
+        </div>
+        <div class="aboutlinkscontainer" >
+            <a href="/services"><div class="aboutlink" ><img class="abouticons" src="{% static 'tomdeldridge/images/gear-2.png' %}"><div id="servicesbuttonabout" class="buttons" >Services</div></div></a>
+            <a href="/portfolio"><div class="aboutlink" ><img class="abouticons" src="{% static 'tomdeldridge/images/computer-2.png' %}"><div id="portfoliobutton" class="buttons" >Portfolio</div></div></a>
+            <a href="/contact"><div class="aboutlink" ><img class="abouticons" src="{% static 'tomdeldridge/images/contact-2.png' %}"><div id="contactusbutton" class="buttons" >Contact</div></div></a>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
