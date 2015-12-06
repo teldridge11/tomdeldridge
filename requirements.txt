@@ -1,3 +1,4 @@
 Django==1.9
 South==1.0.2
 wheel==0.24.0
+gunicorn==19.4.1
