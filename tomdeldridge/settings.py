@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 't#5n6--i9*81q6npabad3+@19sio#!$^ltgo=lu^bq+(y*@_pa'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['www.tomdeldridge.com']
 
