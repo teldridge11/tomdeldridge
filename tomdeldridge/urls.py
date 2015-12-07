@@ -1,6 +1,7 @@
 from . import views
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
@@ -12,3 +13,5 @@ urlpatterns = [
     url(r'^contactfailure/', views.ContactFailureView.as_view()),
     url(r'^contactsuccess/', views.ContactSuccessView.as_view()),
 ]
+
+urlpatterns += staticfiles_urlpatterns()
