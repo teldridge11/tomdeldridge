@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 't#5n6--i9*81q6npabad3+@19sio#!$^ltgo=lu^bq+(y*@_pa'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['www.tomdeldridge.com']
 
@@ -103,7 +103,10 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    os.path.join(os.path.dirname(__file__),'static'),
+    os.path.join(
+        os.path.dirname(__file__),
+        'static',
+    ),
 )
 
 STATIC_ROOT = 'staticfiles'
