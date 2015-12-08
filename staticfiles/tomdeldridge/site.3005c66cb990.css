@@ -1,0 +1,819 @@
+/* Base Styles */
+html, body {
+    margin: 0px;
+    font-family:  avantegarde, sans-serif;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+ul {
+    height: 100px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+p {
+    color: gray;
+}
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 90%;
+}
+.header {
+    height: 58px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid #DCDCDC;
+    z-index: 1;
+    position: fixed;
+}
+.pagewrap {
+    min-height: 100%;
+    margin-bottom: -100px;
+}
+.pagewrap:after  {
+    content: "";
+    height: 100px;
+    display: block;
+}
+.navicon {
+    float: right;
+    display: none;
+    height: 35px;
+    width: 35px;
+    margin-top: 12px;
+    margin-right: 20px;
+    font-weight: 100;
+}
+.navicon:hover {
+    cursor: pointer;
+}
+.nav {
+    padding: 0px;
+    margin: 0px;
+    margin-left: 100px;
+}
+.pagelinkcontainers {
+    font-weight: 100;
+    float: left;
+    list-style-type: none;
+    padding-left: 70px;
+    margin-top: 20px;
+}
+.pagelinks {
+    height: 20px;
+}
+.pagelinks:hover {
+    cursor: pointer;
+    color: #3366BB;
+}
+ .logocontainer {
+     position: absolute;
+     float: left;
+     line-height: 58px;
+     color: white;
+     padding-left: 70px;
+     font-size: 20px;
+     font-weight: 100 !important;
+ }
+.logo {
+    float: left;
+    padding-right: 25px;
+    height: 50px;
+    padding-top: 4px;
+    width: 50px;
+}
+.logo:hover {
+    cursor: pointer;
+}
+.footer {
+    height: 100px;
+    font-size: 12px;
+    width: 100%;
+    border-top: 1px solid #DCDCDC;
+}
+.copywrite {
+    color: gray;
+    line-height: 100px;
+    margin-left: 50px;
+    font-weight: 100;
+    float: left;
+}
+.footerlinkscontainer {
+    margin-right: 5%;
+    float:right;
+}
+.footerlinks {
+    float: right;
+    padding-right: 20px;
+    margin-top: 42px;
+    color: gray;
+}
+.footerlinks:hover {
+    cursor: pointer;
+    color: #3366BB;
+}
+form {
+    font-weight: bold;
+}
+input, textarea {
+    border-radius: 5px;
+    border: none;
+}
+textarea {
+    width: 350px;
+    height: 150px;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+
+
+/* Icon Styles */
+.icondescriptions {
+    font-weight: 100;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: gray;
+}
+
+
+
+
+
+/* Button Styles */
+.buttons {
+    height: 50px;
+    width: 200px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    color: gray;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+}
+.buttons:hover {
+    cursor: pointer;
+    color: white;
+    background-color: gray;
+    opacity: .8;
+}
+#contactbutton {
+    margin-top: 50px;
+    font-size: 16px;
+}
+.servicesbuttonwhite {
+    height: 50px;
+    width: 200px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 4px;
+    color: gray;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 75px;
+    opacity: .8;
+}
+.servicesbuttonwhite:hover {
+    cursor: pointer;
+    color: white;
+    background-color: gray;
+    border: 1px solid gray;
+    opacity: .8;
+}
+.quotebutton {
+    height: 50px;
+    width: 200px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 4px;
+    color: gray;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 75px;
+    opacity: .8;
+}
+.quotebutton:hover {
+    cursor: pointer;
+    color: white;
+    background-color: gray;
+    border: 1px solid gray;
+    opacity: .8;
+}
+
+
+
+
+
+
+/* Title Text Styles */
+.titletextcontainer {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    font-weight: 100;
+}
+.titletexthome {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    width: 800px;
+    font-size: 55px;
+    font-weight: 100;
+    padding-top: 170px;
+}
+.titletextabout {
+    text-align: center;
+    color: white;
+    font-size: 55px;
+    font-weight: 100;
+    padding-top: 170px;
+    text-shadow: 1px -1px 50px black, -1px 1px 50px black;
+}
+.titletextservices {
+    text-align: center;
+    color: white;
+    font-size: 55px;
+    font-weight: 100;
+    padding-top: 200px;
+    text-shadow: 1px -1px 50px black, -1px 1px 50px black;
+}
+.titletextcontact {
+    text-align: center;
+    color: white;
+    font-size: 55px;
+    font-weight: 100;
+    padding-top: 50px;
+}
+
+
+
+
+/* Home Styles */
+.serverimage {
+    height: 550px;
+    width: 100%;
+    background-size: cover;
+    background-image: url("/static/tomdeldridge/images/server-2.c0d2d38393ee.jpg");
+    background-position: center;
+}
+.gatesquote {
+    width: 95%;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 100px;
+    font-weight: 100;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    line-height: 45px;
+    position: relative;
+}
+.technologiesimages {
+    float: left;
+    height: 100px;
+    padding-right: 40px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.technologiescontainerinner {
+    width: 3000px;
+}
+.technologiescontainerouter {
+    margin: 0 auto;
+    overflow: scroll;
+    width: 70%;
+    height: 250px;
+}
+.technologieslabel {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 300;
+    border-bottom: 5px solid #3366BB;
+    width: 270px;
+    height: 53px;
+    padding-top:70px;
+}
+.whatwedo {
+    min-height: 550px;
+    width: 100%;
+    margin-bottom: 50px;
+    line-height: 20px;
+    font-size: 14px;
+}
+.whatwedolabel {
+    padding-top: 100px;
+    margin-left: 10%;
+    font-size: 45px;
+    font-weight: 300;
+    border-bottom: 5px solid #3366BB;
+    width: 252px;
+    padding-bottom: 10px;
+}
+.homeicons {
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    padding-top: 75px;
+}
+.homeservices {
+    margin: 0 auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: scroll;
+}
+.homeiconcontainers {
+    text-align: center;
+    color: #383838;
+    float: left;
+    width: 33.3%;
+}
+.servicesbutton {
+    height: 50px;
+    width: 200px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    color: gray;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 80px;
+    font-size: 16px;
+}
+.servicesbutton:hover {
+    cursor: pointer;
+    color: white;
+    background-color: gray;
+    opacity: .8;
+}
+#aboutpage {
+    overflow: scroll;
+    margin: 0 auto;
+}
+.bitsimage {
+    height: 550px;
+    width: 100%;
+    background-image: url("/static/tomdeldridge/images/screen.443b883e839b.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.aboutus {
+    margin: 0 auto;
+    color: #383838;
+    font-weight: 100;
+    font-size: 14px;
+}
+.aboutlinkscontainer {
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 100px;
+    overflow: scroll;
+}
+.aboutlink {
+    padding-top: 40px;
+    float: left;
+    text-align: center;
+    width: 33%;
+}
+.ourservices {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 300;
+    border-bottom: 5px solid #3366BB;
+    width: 175px;
+    height: 53px;
+}
+.ourfocuscontainer {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 400;
+    overflow: scroll;
+}
+.innerourfocuscontainer {
+    margin: 0 auto;
+    width: 70%;
+    padding-top:80px;
+    min-height: 400px;
+}
+.ourfocusiconcontainers {
+    text-align: center;
+    color: #383838;
+    float: left;
+    width: 33.3%;
+}
+.ourfocusicons {
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    padding-top: 40px;
+}
+.myphoto {
+    float: left;
+    height: 300px;
+    width: 300px;
+    margin-right: 50px;
+    margin-top: 15px;
+    margin-bottom: 16px;
+}
+.tomdescription {
+    min-height: 450px;
+    padding-top: 90px;
+    background-color: #f2f2f2;
+    overflow: scroll;
+}
+.accents {
+    float: left;
+    color: #3366BB;
+}
+.nameheaders {
+    height: 70px;
+}
+.accentheader {
+    float: left;
+}
+.tomdescriptioncontainer {
+    margin: 0 auto;
+    width: 70%;
+}
+.description {
+    font-size: 17px;
+}
+.abouticons {
+    float: none;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* Services Styles */
+.circuitimage {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-image: url("/static/tomdeldridge/images/computer-2.9a6387bd1771.jpg");
+    background-position: center;
+}
+.servicescontainer {
+    margin: 0 auto;
+    min-height: 300px;
+    width: 80%;
+    margin-bottom: 50px;
+    line-height: 20px;
+    font-size: 14px;
+}
+.innerservicescontainer {
+    margin: 0 auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: scroll;
+}
+.servicesiconcontainers {
+    text-align: center;
+    color: #383838;
+    float: left;
+    width: 33.3%;
+}
+.servicesicons {
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    padding-top: 40px;
+}
+
+
+
+
+
+/* Portfolio Styles */
+#portfoliopage {
+    width: 100%;
+    min-height: 750px;
+}
+.slideshow {
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 100px;
+    margin-bottom: 30px;
+}
+#left {
+    float: left;
+}
+#right {
+    float: right;
+}
+.currentslide {
+    width: 100%;
+    height: 500px;
+}
+.slidelabels {
+    z-index: 1;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 300px;
+    font-size: 20px;
+    opacity: .8;
+    background-color: black;
+    color: white;
+    margin: 20px;
+    position: absolute;
+    border-radius: 5px;
+}
+.imagenavcontainer {
+    margin: 0 auto;
+    width: 100px;
+}
+.slidenav {
+    height: 40px;
+    width: 40px;
+    opacity: .5;
+}
+.slidenav:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Contact Styles */
+.contactimage {
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-image: url("/static/tomdeldridge/images/bottle-2.e9d429dcb29b.jpg");
+    background-position: center;
+}
+.contactcontainer {
+    width: 450px;
+    margin-top: 130px;
+    margin-left: 5%;
+    background: none;
+    border-radius: 5px;
+    opacity: .7;
+    position: absolute;
+}
+.contactformcontainer {
+    text-align: center;
+    width: 350px;
+    margin: auto;
+    margin-top: 25px;
+    color: #162840;;
+}
+.formfields {
+    width: 350px;
+    height: 35px;
+    font-size: 17px;
+    padding-left: 10px;
+}
+.submit {
+    font-size: 17px;
+    background-color: white;
+    border: none;
+    color: none;
+    float: left;
+    width: 225px;
+    height: 37px;
+    margin-left: 25px;
+}
+.submit:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+#num1, #num2, #whatis, #plus {
+    float: left;
+    color: white;
+    text-shadow: 1px -1px 10px black, -1px 1px 10px black;
+}
+#sum{
+    float: left;
+    width: 100px;
+    font-size: 17px;
+    padding-left: 10px;
+    height: 35px;
+}
+#sumcontainer{
+    float: left;
+    width: 100px;
+}
+.contactValidation {
+    padding-top: 10px;
+}
+
+
+
+
+/* Max size 1100 pixels */
+@media screen and (max-width: 1100px) {
+    .innerourfocuscontainer {
+        width: 90%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .tomdescriptioncontainer {
+        width: 90%;
+        padding-bottom: 40px;
+    }
+    .aboutlinkscontainer {
+        width: 90%;
+    }
+    .slideshow, .currentslide {
+        width: 800px;
+        height: 400px;
+    }
+}
+
+
+
+
+
+/* Min size 901 pixels */
+@media only screen and (min-width: 901px) {
+    .nav {
+        display: block !important;
+    }
+}
+
+
+
+
+
+/* Max size 900 pixels */
+@media screen and (max-width: 900px) {
+    .technologiescontainerouter {
+        width: 90%;
+    }
+    .titletextcontainer {
+        position: absolute;
+        width: 100%;
+        margin-left: 0;
+        font-weight: 100;
+}
+    .aboutus {
+        margin-top: 40px;
+    }
+    .myphoto {
+        width: 300px;
+        height: 300px;
+    }
+    .logocontainer {
+        padding-left: 20px;
+    }
+    .copywrite {
+        margin-left: 20px;
+    }
+    .navicon {
+        display: block;
+    }
+    .pagelinkcontainers {
+        float: none;
+        line-height: 50px;
+        background-color: black;
+        padding-left: 0px;
+        width: 200px;
+        text-align: center;
+        margin-top: 0px;
+        color: white;
+    }
+    .pagelinkcontainers:hover {
+        cursor: pointer;
+        background-color: white;
+        color: gray;
+    }
+    .pagelinks {
+        height: 50px;
+        margin-top: 0px;
+    }
+    .pagelinks:hover {
+        text-decoration: none;
+    }
+    .nav {
+        position: relative;
+        margin-top: 70px;
+        margin-left: 0px;
+        float: right;
+        display: none;
+    }
+    header {
+        color: white;
+    }
+    .titletexthome {
+        width: 500px;
+        font-size: 35px;
+    }
+    .slideshow, .currentslide {
+        width: 650px;
+        height: 325px;
+    }
+}
+
+
+
+
+
+/* Max size 700 pixels */
+@media screen and (max-width: 700px) {
+    .myphoto {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+    .aboutlink {
+        padding-top: 40px;
+        float: none;
+        width: 100%;
+    }
+    .titletextabout {
+        padding-top: 180px;
+        font-size: 40px;
+    }
+    .homeiconcontainers {
+        float: none;
+        width: 100%;
+    }
+    .servicesiconcontainers {
+        float: none;
+        width: 100%;
+    }
+    .ourfocusiconcontainers {
+        float: none;
+        width: 100%;
+    }
+    .homeicons {
+        padding-top: 40px;
+    }
+    .contactcontainer {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .contactformcontainer {
+        width: 100%;
+        margin: auto;
+        margin-top: 25px;
+        text-align: center;
+    }
+    .formfields {
+        width: 90%;
+    }
+    textarea {
+        width: 90%;
+    }
+    #sendcontainer {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .submit {
+        width: 69%;
+        margin-right: -25px;
+    }
+    #sumcontainer {
+        width: 24%;
+    }
+    #sum {
+        width: 100%;
+    }
+    .slideshow, .currentslide {
+        width: 500px;
+        height: 250px;
+    }
+}
+
+/* Max size 525 pixels */
+@media screen and (max-width: 525px) {
+    .quotebutton {
+        margin-top:10px;
+    }
+    .titletexthome {
+        width: 300px;
+        font-size: 24px;
+    }
+    #copywritelabel {
+        display: none;
+    }
+    .slideshow, .currentslide {
+        width: 320px;
+        height: 160px;
+    }
+}

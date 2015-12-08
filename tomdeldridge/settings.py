@@ -108,9 +108,9 @@ STATICFILES_DIRS = (
         'static',
     ),
 )
-
 STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
