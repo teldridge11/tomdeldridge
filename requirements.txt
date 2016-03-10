@@ -1,6 +1,9 @@
 dj-static==0.0.6
 Django==1.9
 gunicorn==19.4.1
+<<<<<<< HEAD
 static3==0.6.1
+=======
+>>>>>>> 66039b4b725c3fbaa1ace51eb5a87b2ab9ac43fd
 wheel==0.24.0
 whitenoise==2.0.6
