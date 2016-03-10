@@ -50,6 +50,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
+# Allow URL without www. to redirect to URL with www.
+PREPEND_WWW = True
+
 ROOT_URLCONF = 'tomdeldridge.urls'
 
 TEMPLATES = [
