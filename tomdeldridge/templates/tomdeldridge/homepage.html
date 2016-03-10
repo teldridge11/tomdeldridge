@@ -6,16 +6,18 @@
 
 <div id="homepage" class="pages" >
     <div class="titletextcontainer" >
-        <div class="titletexthome" >Web development done right. Every time, the first time.
+        <div class="titletexthome" >Software built right. <br>Every time, the first time.
         </div>
-        <a href="/portfolio"><div class="servicesbuttonwhite" >Portfolio</div></a>
+        <a class="whitelinks" href="/contact"><div class="buttonstoppadding">Get a quote</div></a>
     </div>
     <div class="bitsimage" ></div>
     <div class="aboutus" >
         <div class="ourfocuscontainer" >
             <div class="innerourfocuscontainer" >
-                <div class="ourservices" >
-                    Services
+                <div class="ourservicescontainer">
+                    <span class="threeservicesaccent">-</span>
+                    <span class="ourservices" >Services</span>
+                    <span class="threeservicesaccent">-</span>
                 </div>
                 <div class="ourfocusiconcontainers" >
                     <img class="ourfocusicons" src="{% static 'tomdeldridge/images/orangelaptop.png' %}">
@@ -24,7 +26,7 @@
                 </div>
                 <div class="ourfocusiconcontainers" >
                     <img class="ourfocusicons" src="{% static 'tomdeldridge/images/phone.png' %}">
-                    <div class="iconlabels"><b>iPhone App Development</b></div>
+                    <div class="iconlabels"><b>iOS App Development</b></div>
                     <p class="icondescriptions">Apple's new programming language, Swift, makes developing custom apps a breeze.</p>
                 </div>
                 <div class="ourfocusiconcontainers" >
@@ -33,10 +35,14 @@
                     <p class="icondescriptions">A quality design creates synergy with your brand the rest of your organization.</p>
                 </div>
             </div>
-            <a href="/services"><div class="servicesbutton" >Other Services</div></a>
+            <a class="whitelinks" href="/services#servicescontainer"><div class="buttonsbottompadding" onclick="otherServices">Other Services</div></a>
         </div>
         <hr>
-        <div class="technologieslabel">Technologies</div>
+        <div class="technologieslabelcontainer">
+            <span class="threeservicesaccent">-</span>
+            <span class="technologieslabel">Technologies</span>
+            <span class="threeservicesaccent">-</span>
+        </div>
         <div class="technologiescontainerouter">
            <div class="technologiescontainerinner">
                <img class="technologiesimages" src="{% static 'tomdeldridge/images/html_css.png' %}">
@@ -56,14 +62,15 @@
                     <p>Tom is pursuing a B.S. in Computer Science from Oregon State University, and has a B.S. in Management from Tulane University.  His interests in technology are robotics, artificial intelligence, and bioinformatics.</p>
                     <p>Recent projects Tom has worked on are HealthRank - an iPhone application that gives users a daily health score, and PyGamers.com - A website for PyGame developers and hobbyists to share their games and code.</p>
                     <p>He first started writing software in 2011, and it has become one of his greatest passions.  Tom is proficient in C, C++, HTML, CSS, JavaScript, Python, Swift, PHP, and SQL.</p>
+                    <p><a class="getintouch" href="/contact">Get in touch ></a></p>
                 </div>
             </div>
         </div>
-        <div class="aboutlinkscontainer" >
-            <a href="/services"><div class="aboutlink" ><img class="abouticons" src="{% static 'tomdeldridge/images/gear-2.png' %}"><div id="servicesbuttonabout" class="buttons" >Services</div></div></a>
-            <a href="/portfolio"><div class="aboutlink" ><img class="abouticons" src="{% static 'tomdeldridge/images/computer-2.png' %}"><div id="portfoliobutton" class="buttons" >Portfolio</div></div></a>
-            <a href="/contact"><div class="aboutlink" ><img class="abouticons" src="{% static 'tomdeldridge/images/contact-2.png' %}"><div id="contactusbutton" class="buttons" >Contact</div></div></a>
+        <div class="titletextcontainer" >
+            <div class="titletextspace" >Check out some recent projects</div>
+            <a class="bluelinks" href="/portfolio"><div id="recentprojects" class="buttonstoppaddingwhite">Take a look</div></a>
         </div>
+        <div class="spaceimage" ></div>
     </div>
 </div>
 

@@ -25,15 +25,6 @@ function MobileMenu (object) {
     }
 }
 
-function generateRandNum() {
-    var num1 = Math.floor((Math.random() * 9) + 1);
-    var num2 = Math.floor((Math.random() * 9) + 1);
-    document.getElementById("num1setup").value = num1;
-    document.getElementById("num2setup").value = num2;
-    document.getElementById("num1").innerHTML = num1;
-    document.getElementById("num2").innerHTML = num2;
-}
-
 // Hide Mobile Nav when link is clicked
 function HideNav () {
 
@@ -53,7 +44,7 @@ var  Image_Number = 0;
 
 function change_image (num) {
 
-    var image = ["/static/tomdeldridge/images/eco.png", "/static/tomdeldridge/images/fhlora.png", "/static/tomdeldridge/images/pygamers.png", "/static/tomdeldridge/images/healthrank.png", "/static/tomdeldridge/images/john.png"];
+    var image = ["/static/tomdeldridge/images/eco.png", "/static/tomdeldridge/images/fhlora.png", "/static/tomdeldridge/images/pygamersImage.png", "/static/tomdeldridge/images/healthrankImg.png", "/static/tomdeldridge/images/john.png"];
 
     var  Image_Length = image.length - 1;
     console.log(Image_Length);

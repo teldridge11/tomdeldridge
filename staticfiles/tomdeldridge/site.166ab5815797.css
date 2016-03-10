@@ -303,7 +303,7 @@ textarea {
     height: 550px;
     width: 100%;
     background-size: cover;
-    background-image: url(/static/tomdeldridge/images/server-2.jpg);
+    background-image: url("/static/tomdeldridge/images/server-2.c0d2d38393ee.jpg");
     background-position: center;
 }
 .gatesquote {
@@ -389,7 +389,7 @@ textarea {
 .bitsimage {
     height: 550px;
     width: 100%;
-    background-image: url(/static/tomdeldridge/images/screen.jpg);
+    background-image: url("/static/tomdeldridge/images/screen.443b883e839b.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -483,7 +483,7 @@ textarea {
     height: 320px;
     width: 100%;
     background-size: cover;
-    background-image: url(/static/tomdeldridge/images/space.jpg);
+    background-image: url("/static/tomdeldridge/images/space.f08441db1e16.jpg");
     background-position: center;
 }
 
@@ -496,7 +496,7 @@ textarea {
     height: 300px;
     width: 100%;
     background-size: cover;
-    background-image: url(/static/tomdeldridge/images/computer-2.jpg);
+    background-image: url("/static/tomdeldridge/images/computer-2.9a6387bd1771.jpg");
     background-position: center;
 }
 .servicescontainer {
@@ -695,7 +695,7 @@ textarea {
     height: 600px;
     width: 100%;
     background-size: cover;
-    background-image: url(/static/tomdeldridge/images/bottle-2.jpg);
+    background-image: url("/static/tomdeldridge/images/bottle-2.e9d429dcb29b.jpg");
     background-position: center;
 }
 .contactcontainer {

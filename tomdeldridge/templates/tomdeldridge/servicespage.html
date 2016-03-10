@@ -2,42 +2,135 @@
 
 {% load staticfiles %}
 
+{% block head %}
+
+<script>
+
+    // OnClick three services view changes
+    function onclickSectionChange(service) {
+        console.log(service);
+        var possibleServices = ["serviceswebdevicon", "servicesiosicon", "servicesdesignicon"];
+
+        for (i in possibleServices) {
+            if(possibleServices[i] === service) {
+                document.getElementById(possibleServices[i]).style.height = "200px";
+                document.getElementById(possibleServices[i]).style.width = "200px";
+                document.getElementById(possibleServices[i]).style.marginTop = "0px";
+                document.getElementById(possibleServices[i] + "label").style.fontSize = "20px";
+                document.getElementById(possibleServices[i] + "label").style.borderBottom = "4px solid #3366BB";
+
+                var buttonLabelText = document.getElementById(possibleServices[i] + "label").innerText;
+                document.getElementById("threeserviceslabel").innerHTML = buttonLabelText;
+            }
+            else {
+                document.getElementById(possibleServices[i]).style.height = "150px";
+                document.getElementById(possibleServices[i]).style.width = "150px";
+                document.getElementById(possibleServices[i]).style.marginTop = "25px";
+                document.getElementById(possibleServices[i] + "label").style.fontSize = "15px";
+                document.getElementById(possibleServices[i] + "label").style.borderBottom = "none";
+            }
+        }
+        if (service === "servicesiosicon") {
+            document.getElementById("imageTwo").src =  "{% static 'tomdeldridge/images/grayApple.png' %}";
+            document.getElementById("imageTwo").style.opacity =  0.8;
+            document.getElementById("secondDescription").innerHTML =  "Apple's new programming language, Swift, makes building iOS apps easier than ever before.";
+            document.getElementById("thirdDescription").innerHTML =  "Recently created an app called HealthRank that gives users a daily score on their health.";
+            document.getElementById("firstDescription").innerHTML =  "&quot;Tom is an excellent app developer who gets things done quickly. &quot; <br><br>-Mark Jacobs";
+        }
+        else if (service === "serviceswebdevicon") {
+            document.getElementById("imageTwo").src =  "{% static 'tomdeldridge/images/grayPythonLogo.png' %}";
+            document.getElementById("imageTwo").style.opacity =  1.0;
+            document.getElementById("secondDescription").innerHTML =  "HTML, CSS, and JavaScript are used for the client side. Python and Django are used for the server side.";
+            document.getElementById("thirdDescription").innerHTML =  "Recent web development projects include EcoQuiet Lawn Care, PyGamers.com, and Fhlora Inc.";
+            document.getElementById("firstDescription").innerHTML =  "&quot;Tom is an inredible web developer.  He stay's on schedule and budget.&quot; <br><br> -George P. Carrette";
+        }
+        else if (service == "servicesdesignicon") {
+            document.getElementById("imageTwo").src =  "{% static 'tomdeldridge/images/balsamiq.png' %}";
+            document.getElementById("imageTwo").style.opacity =  1.0;
+            document.getElementById("secondDescription").innerHTML =  "Balsamiq is used to design every last detail of the UI/UX before development begins.";
+            document.getElementById("thirdDescription").innerHTML =  "Recent full-scale design projects include HealthRank and Fhlora.com.";
+            document.getElementById("firstDescription").innerHTML =  "&quot;Tom is one of the best designers I've seen, and a user experience wizard.&quot; <br><br> -Srinivas Vinran";
+        }
+    }
+</script>
+
+{% endblock head %}
+
 {% block content %}
 
 <div id="servicespage" class="pages" >
     <div class="titletextcontainer" >
-        <div class="titletextservices" >Software Services
-        </div>
-        <a href="/portfolio"><div class="servicesbuttonwhite" >Project Examples</div></a>
+        <div class="titletextservices" >Software Development Services</div>
+        <a class="bluelinks" href="/portfolio"><div id="projectportfolio" class="buttonstoppadding">Project Portfolio</div></a>
     </div>
-    <div class="serverimage" ></div>
-    <div class="servicescontainer" >
-        <div class="innerservicescontainer" >
-            <div class="servicesiconcontainers" >
-                <img class="servicesicons" src="{% static 'tomdeldridge/images/computer-2.png' %}">
-                <div class="iconlabels" ><b>Web Applications</b></div>
-                <p class="icondescriptions" >Using Python and Django, web applications can be built in very little time without sacrificing performance or scalability.</p>
+    <div class="serverimage"></div>
+    <div id="servicesourfocuscontainer" class="servicesourfocuscontainer">
+        <div class="servicesinnerourfocuscontainer">
+            <div class="ourfocusiconcontainers">
+                <div class="servicesourfocusicons">
+                    <img onclick="onclickSectionChange('serviceswebdevicon');" id="serviceswebdevicon" class="ourfocusicons" src="{% static 'tomdeldridge/images/orangelaptop.png' %}">
+                    <br>
+                    <span id="serviceswebdeviconlabel" class="iconlabels"><b>Web Development</b></span>
+                </div>
             </div>
-            <div class="servicesiconcontainers" >
-                <img class="servicesicons" src="{% static 'tomdeldridge/images/phone.png' %}">
-                <div class="iconlabels" ><b>Mobile Development</b></div>
-                <p class="icondescriptions" >All web apps are designed to be mobile responsive.  If something more specific is needed, a custom iOS app can be built.</p>
+            <div class="ourfocusiconcontainers">
+                <div class="servicesourfocusicons">
+                    <img onclick="onclickSectionChange('servicesiosicon');" id="servicesiosicon" class="ourfocusicons" src="{% static 'tomdeldridge/images/phone.png' %}">
+                    <br>
+                    <span id="servicesiosiconlabel" class="iconlabels"><b>iOS App Development</b></span>
+                </div>
             </div>
-            <div class="servicesiconcontainers" >
-                <img class="servicesicons" src="{% static 'tomdeldridge/images/graph-2.png' %}">
-                <div class="iconlabels" ><b>Analytics Packages</b></div>
-                <p class="icondescriptions" >All applications come built-in with the most advanced analytics software avaliable to help you stay up to date with your users.</p>
+            <div class="ourfocusiconcontainers">
+                <div class="servicesourfocusicons">
+                    <img onclick="onclickSectionChange('servicesdesignicon');" id="servicesdesignicon" class="ourfocusicons" src="{% static 'tomdeldridge/images/flower-2.png' %}">
+                    <br>
+                    <span id="servicesdesigniconlabel" class="iconlabels"><b>Software Design</b></span>
+                </div>
             </div>
         </div>
     </div>
-    <div class="titletextcontainer" >
+    <div class="threeservicescontainer">
+        <span class="threeservicesaccent">-</span>
+        <span id="threeserviceslabel" class="threeserviceslabel">Web Development</span>
+        <span class="threeservicesaccent">-</span>
+        <div id="threemainlinkscontainer">
+            <div class="threemainlinks">
+                <div class="innerthreemainlinks">
+                    <img id="imageOne" class="grayicons" src="{% static 'tomdeldridge/images/quotationMarks.png' %}">
+                    <div class="grayiconlabels">Testimonials</div>
+                    <div id="firstDescription" class="grayicondescriptions">"Tom is an inredible web developer.  He stay's on schedule and budget." <br><br> -George P. Carrette</div>
+                    <a href="/contact/"><div class="grayiconlinks">Get in touch ></div></a>
+                </div>
+            </div>
+            <div class="threemainlinks">
+                <div class="innerthreemainlinks">
+                    <img id="imageTwo" class="grayicons" src="{% static 'tomdeldridge/images/grayPythonLogo.png' %}">
+                    <div class="grayiconlabels">Technologies</div>
+                    <div id="secondDescription" class="grayicondescriptions">HTML, CSS, and JavaScript are used for the client side. Python and Django are used for the server side.</div>
+                    <a href="/services#servicescontainer"><div class="grayiconlinks">Other Services ></div></a>
+                </div>
+            </div>
+            <div class="threemainlinks">
+                <div class="innerthreemainlinks">
+                    <img id="imageThree" class="grayicons" src="{% static 'tomdeldridge/images/grayGear.png' %}">
+                    <div class="grayiconlabels">Projects</div>
+                    <div id="thirdDescription" class="grayicondescriptions">Recent web development projects include EcoQuiet Lawn Care, PyGamers.com, and Fhlora Inc.</div>
+                    <a href="/portfolio/"><div class="grayiconlinks">Portfolio ></div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="titletextcontainer">
         <div class="titletextcontact" >Build your idea today</div>
-        <a href="/contact"><div class="quotebutton" >Get a quote</div></a>
+        <a class="whitelinks" href="/contact"><div id="buildyouridea" class="buttonstoppadding">Start your project</div></a>
     </div>
     <div class="circuitimage" ></div>
-        <div class="servicescontainer" >
-        <div class="innerservicescontainer" >
-            <div class="servicesiconcontainers" >
+    <div id="servicescontainer" class="servicescontainer">
+        <span class="threeservicesaccent">-</span>
+        <span class="threeserviceslabel">Other Services</span>
+        <span class="threeservicesaccent">-</span>
+        <div class="innerservicescontainer">
+            <div class="servicesiconcontainers">
                 <img class="servicesicons" src="{% static 'tomdeldridge/images/cart-2.png' %}">
                 <div class="iconlabels" ><b>eCommerce</b></div>
                 <p class="icondescriptions" >Online retail is a huge part of the web today, and we offer solutions for your business to sell your products and services online.</p>
@@ -48,9 +141,9 @@
                 <p class="icondescriptions" >We use Drupal and Wordpress so our clients can publish their own content.  For efficiency reasons, we use CMS's exclusively for blogs.</p>
             </div>
             <div class="servicesiconcontainers" >
-                <img class="servicesicons" src="{% static 'tomdeldridge/images/maintenance-2.png' %}">
-                <div class="iconlabels" ><b>Hosting / Maintenance</b></div>
-                <p class="icondescriptions" >Host your site on our servers, and if you need any maintenance or run into bugs, we can take care of it for you.</p>
+                <img class="servicesicons" src="{% static 'tomdeldridge/images/graph-2.png' %}">
+                <div class="iconlabels" ><b>Analytics Packages</b></div>
+                <p class="icondescriptions" >All applications come built-in with the most advanced analytics software avaliable to help you stay up to date with your users.</p>
             </div>
         </div>
     </div>
