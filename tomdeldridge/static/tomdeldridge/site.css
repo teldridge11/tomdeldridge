@@ -996,7 +996,7 @@ textarea {
     .innerthreemainlinks {
         width: 75%;
     }
-    .threeserviceslabel {
-        font-size: 36px;
+    .threeserviceslabel, .technologieslabel, .ourservices {
+        font-size: 30px;
     }
 }
